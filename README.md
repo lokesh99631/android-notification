@@ -3,11 +3,11 @@ from kivy.app import App
 from kivy.uix.button import Button
 import plyer
 
-class Myapp(App):
+class Instagram(App):
     def build(self):
-        return Button(text='press to explore My app', on_press=self.notify)
+        return Button(text='press to open Instagram', on_press=self.notify)
 
     def notify(self, obj):
-        plyer.notification.notify(title="MY app", messsage="welcome To My app")
+        plyer.notification.notify(title="Hello User", messsage="You have New Friend Request")
 
-Myapp().run()
+Instagram().run()
